@@ -9,12 +9,7 @@ pipeline {
 		    bat "for /d %%X in (*.*) do rmdir /s /q %%X"
             }
         }
-		stage('CLONE') { 
-            steps {
-                echo '--CLONE STAGE EXECUTION ---'
-				bat "https://github.com/subha130604/pipelinesearch.git"
-            }
-        }
+		
         stage('Build') { 
             steps {
                 bat 'javac LinearSearch.java'
