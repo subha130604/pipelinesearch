@@ -12,7 +12,7 @@ pipeline {
 		stage('CLONE') { 
             steps {
                 echo '--CLONE STAGE EXECUTION ---'
-				bat "git clone https://github.com/Rsowmya26/pipelinee.git"
+				bat "https://github.com/subha130604/pipelinesearch.git"
             }
         }
         stage('Build') { 
